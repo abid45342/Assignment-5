@@ -26,7 +26,9 @@ document.getElementById('donation').addEventListener('click', function() {
     document.getElementById('historyContent').classList.add('hidden');
     document.getElementById('donationContent').classList.remove('hidden');
 });
-let value =0;
+let value1 =0;
+let value2=0;
+let value3=0;
 let bal=5500;
 
 
@@ -42,8 +44,20 @@ function donate( donateBtn,input,donate)
         if(!isNaN(inputt) && inputt>0 )
         {
             let donatee = document.getElementById(donate);
-            value= value+inputt
-            donatee.innerText=`${value} BDT`
+            if(input==='input1')
+            {
+                value1= value1+inputt
+                 donatee.innerText=`${value1} BDT`
+            }
+            else if(input==='input2')
+            { value2= value2+inputt
+                  donatee.innerText=`${value2} BDT`
+            }
+            else{
+                  value3= value3+inputt
+                  donatee.innerText=`${value3} BDT`
+            }
+           
             bal=bal-inputt;
             let balance = document.getElementById('balance')
             balance.innerText=`${bal} BDT`
