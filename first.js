@@ -61,9 +61,11 @@ function donate( donateBtn,input,donate)
             bal=bal-inputt;
             let balance = document.getElementById('balance')
             balance.innerText=`${bal} BDT`
+            
+            
         }
 
-
+       
         
  
  }
