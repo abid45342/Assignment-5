@@ -1,105 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-        .lexend {
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
+      @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+      .lexend {
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
 
-  font-style: normal;
-}
-.accordion-content {
-            display: none;
-        }
-        .ai.active .accordion-content {
-            display: block;
-        }
-        </style>
-</head>
+        font-style: normal;
+      }
+      .accordion-content {
+        display: none;
+      }
+      .ai.ac .accordion-content {
+        display: block;
+      }
+    </style>
+  </head>
 
-
-
-
-
-<body>
-    <nav  id="navbar"  class=" bg-[rgb(249,247,243)]  lg:flex flex flex-col lg:flex-row justify-between items-center pt-4 pb-7 px-14 sticky top-0 mb-10 ">
-        <a href="index.html"><button class="bg-[rgb(180,244,97)] h-10 w-16 rounded-md font-bold">Home</button></a>
-        <div class="flex items-center gap-3">
-            <img src="images/logo.png" alt="">
-            <h1 class="font-bold">Donate Bangladesh</h1>
-        </div>
-        <div class="flex items-center gap-2">
-            <img src="images/coin.png" alt="">
-            <p id="balance"  class="text-[rgba(17,17,17,0.7)]">5500 BDT</p>
-        </div>
-      </nav>
-      <main>
-        <section class="bg-gray-100 p-6">
-
-            <div class="max-w-5xl mx-auto bg-white rounded-lg shadow-md">            
-                 <!-- accordion section -->
-                <div class="accordion">
-                    <!-- 1st accordion -->
-                    <div class="ai border-b">
-                        <div class="accordion-title cursor-pointer p-4 text-lg font-semibold text-gray-700 hover:bg-gray-200">
-                            What is the DOM?
-                        </div>
-                        <div class="accordion-content p-4 text-gray-600">
-                            The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a document as a tree of objects.
-                        </div>
-                    </div>
-                    <!-- 2nd accordion -->
-                    <div class="ai border-b">
-                        <div class="accordion-title cursor-pointer p-4 text-lg font-semibold text-gray-700 hover:bg-gray-200">
-                            How can I access an element in the DOM?
-                        </div>
-                        <div class="accordion-content p-4 text-gray-600">
-                            You can access an element using methods like getElementById, getElementsByClassName, or querySelector in JavaScript.
-                        </div>
-                    </div>
-                    <!-- third accordion -->
-                    <div class="ai border-b">
-                        <div class="accordion-title cursor-pointer p-4 text-lg font-semibold text-gray-700 hover:bg-gray-200">
-                            What is the purpose of the createElement method?
-                        </div>
-                        <div class="accordion-content p-4 text-gray-600">
-                            The createElement` method is used to create new HTML elements dynamically in the DOM.
-                        </div>
-                    </div>
-                    <!-- forth accordion -->
-                    <div class="ai border-b">
-                        <div class="accordion-title cursor-pointer p-4 text-lg font-semibold text-gray-700 hover:bg-gray-200">
-                            How do I add an event listener to an element?
-                        </div>
-                        <div class="accordion-content p-4 text-gray-600">
-                            You can add an event listener using the `addEventListener method, specifying the event type and the callback function.
-                        </div>
-                    </div>
-                </div>
+  <body>
+    <nav
+      id="navbar"
+      class="bg-[rgb(249,247,243)] lg:flex flex flex-col lg:flex-row justify-between items-center pt-4 pb-7 px-14 sticky top-0 mb-10"
+    >
+      <a href="index.html"
+        ><button class="bg-[rgb(180,244,97)] h-10 w-16 rounded-md font-bold">
+          Home
+        </button></a
+      >
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="" />
+        <h1 class="font-bold">Donate Bangladesh</h1>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="images/coin.png" alt="" />
+        <p id="balance" class="text-[rgba(17,17,17,0.7)]">5500 BDT</p>
+      </div>
+    </nav>
+    <main>
+      <section class="bg-gray-100 p-6">
+        <div class="max-w-5xl mx-auto bg-white rounded-lg shadow-md">
+          <!-- accordion section -->
+          <div class="accordion">
+            <!-- 1st accordion -->
+            <div class="ai border-b">
+              <div
+                class="at cp p-4 text-lg font-semibold text-gray-700 hover:bg-gray-200"
+              >
+                What do you understand by DOM?
+              </div>
+              <div class="accordion-content p-4 text-gray-600">
+                The Document Object Model (DOM) is the data representation of
+                the objects that comprise the structure and content of a
+                document on the web
+              </div>
             </div>
-            </section>
-        
-      </main>
-      <script>
-        const titles = document.querySelectorAll('.accordion-title');
-        
-        titles.forEach(title => {
-            title.addEventListener('click', () => {
-                const item = title.parentElement;
-                item.classList.toggle('active');
-            });
+            <!-- 2nd accordion -->
+            <div class="ai border-b">
+              <div
+                class="at cp p-4 text-lg font-semibold text-gray-700 hover:bg-gray-200"
+              >
+                How to access DOM element?
+              </div>
+              <div class="accordion-content p-4 text-gray-600">
+                DOM element can be accessed by methods lik getElementById, getElementsByClassName, getElementsByTagName, querySelector etc.
+              </div>
+            </div>
+            <!-- third accordion -->
+            <div class="ai border-b">
+              <div
+                class="at cp p-4 text-lg font-semibold text-gray-700 hover:bg-gray-200"
+              >
+                which method is used for creating new element?
+              </div>
+              <div class="accordion-content p-4 text-gray-600">
+                The createElement method is used for creating new element
+              </div>
+            </div>
+            <!-- forth accordion -->
+            <div class="ai border-b">
+              <div
+                class="at cp p-4 text-lg font-semibold text-gray-700 hover:bg-gray-200"
+              >
+                How to addEventListener?
+              </div>
+              <div class="accordion-content p-4 text-gray-600">
+                addEventListener method can be used by specifying the type of event and a callback function
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const titles = document.querySelectorAll(".at");
+
+      titles.forEach((title) => {
+        title.addEventListener("click", () => {
+          const item = title.parentElement;
+          item.classList.toggle("ac");
         });
+      });
     </script>
-
-</body>
-      
-        
-       
-        
-
+  </body>
 </html>
